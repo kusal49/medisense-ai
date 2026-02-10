@@ -15,6 +15,10 @@ st.set_page_config(
     page_title="MediSense AI",
     layout="centered"
 )
+# ✅ REQUIRED FOR HUGGING FACE FILE UPLOADS
+st._config.set_option("server.enableXsrfProtection", False)
+st._config.set_option("server.enableCORS", False)
+
 
 # ---------------- Header ----------------
 st.markdown(
@@ -42,12 +46,14 @@ uploaded_file = None
 if report_type == "PDF":
     uploaded_file = st.file_uploader(
         "Upload medical report (PDF)",
-        type=["pdf"]
+        type=["pdf"],
+        accept_multiple_files=False
     )
 else:
     uploaded_file = st.file_uploader(
         "Upload medical report (Image)",
-        type=["jpg", "jpeg", "png"]
+        type=["jpg", "jpeg", "png"],
+        accept_multiple_files=False
     )
 
 # ---------------- Processing ----------------
