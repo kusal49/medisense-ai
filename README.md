@@ -1,4 +1,3 @@
-
 ---
 title: Medisense Ai
 emoji: 🐢
@@ -10,11 +9,9 @@ license: mit
 short_description: AI-powered medical report analyzer using LLMs, OCR, and risk
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
-
 # MediSense AI 🩺
 
-AI-powered medical report analyzer that explains reports clearly,
+AI-powered medical report analyzer that explains reports clearly,  
 assesses medical risk safely, and guides next steps.
 
 ## Features
@@ -35,5 +32,3 @@ assesses medical risk safely, and guides next steps.
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
-
-
