@@ -4,3 +4,6 @@ langchain-groq
 python-dotenv
 pdfplumber
 pytesseract
+langchain-core
+Pillow
+opencv-python-headless
